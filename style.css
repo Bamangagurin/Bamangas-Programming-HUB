@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Sky blue color */
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    border-radius: 10px 10px 0 0;
+    text-align: center; /* Center align content in header */
+}
+header .logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add space below */
+}
+header nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    display: inline;
+    padding: 0 20px;
+    position: relative; /* For dropdown positioning */
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+header .dropdown {
+    display: inline-block;
+}
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+header .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+header .dropdown-content a:hover {
+    background-color: #555;
+}
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+.content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
